@@ -19,7 +19,7 @@ public class BrowserInvoke {
 		try {
 			System.setProperty("webdriver.ie.driver", ".\\BrowserDrivers\\IEDriverServer_Win32_3.8.0.exe");
 			driver = new InternetExplorerDriver();
-			driver.manage().window().maximize();
+			driver.manage().window().maximize(); //will maximize the window
 			driver.get("https://www.google.co.in");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -31,7 +31,7 @@ public class BrowserInvoke {
 		try {
 			System.setProperty("webdriver.chrome.driver", ".\\BrowserDrivers\\chromedriver_83_0_4103_39.exe");
 			driver = new ChromeDriver();
-			driver.manage().window().maximize();
+			driver.manage().window().maximize(); //will maximize the window
 			driver.get("https://www.google.co.in");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -42,7 +42,7 @@ public class BrowserInvoke {
 	public void firefoxBrowser() {
 		try {
 			System.setProperty("webdriver.gecko.driver", ".\\BrowserDrivers\\geckodriver-v0_26_0.exe");
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(); //will maximize the window
 			driver.manage().window().maximize();
 
 			driver.get("https://www.google.co.in");

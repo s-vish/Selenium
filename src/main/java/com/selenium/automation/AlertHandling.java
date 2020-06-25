@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class AlertHandling {
@@ -65,6 +66,13 @@ public class AlertHandling {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
+	}
+	
+	@AfterTest
+	public void tearDown()
+	{
+		//quit this driver along with every associated window.
+		driver.quit();
 	}
 
 }
