@@ -1,4 +1,3 @@
 #ignore the files being uploaded on git repo
 /target
 /test-output
-/src/main/java/com/selenium/automation/DefalutFirefoxProfile.java

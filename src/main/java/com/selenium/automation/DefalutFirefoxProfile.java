@@ -28,6 +28,6 @@ public class DefalutFirefoxProfile {
         WebDriver driver = new FirefoxDriver(options);
         driver.manage().window().maximize();
         driver.get("http://www.google.com");
-		
+		System.out.println("browser opened");
 	}
 }
